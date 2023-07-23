@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: start;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 .naviconszero{
     text-align: center;
@@ -172,7 +172,7 @@ body{
 .fourthsecdata1{
     width: max-content;
     margin-top: 40px; 
-    height: 55%; 
+    height: 75%; 
     padding: 10px 20px;
     background-color: #FAFAFA;
 }
@@ -185,6 +185,10 @@ body{
     border-color: blue;
     width: max-content;
     padding: 10px 15px;
+}
+.fourthsecinput{
+    width: 250px;
+    border: none
 }
 @media only screen and (max-width: 425px) {
     .main{
@@ -269,7 +273,7 @@ body{
         width: auto;
         height: 1500px;
         justify-content: center;
-        gap: 70px;
+        gap: 20px;
     }
     .fourthsecdata1{
         width: auto;
@@ -277,7 +281,11 @@ body{
         padding-left: 45px;
     }
     .fourthsecdata2{
-        height: 100px;
+        height: 120px;
         margin-left: 45px;
+        display: none;
+    }
+    .fourthsecinput{
+        width: 220px;
     }
   }
