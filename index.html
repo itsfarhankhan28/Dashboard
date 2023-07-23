@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="naviconszero">
+                <span id="logo_dev" style="font-size: 30px" class="material-symbols-outlined">
+                    logo_dev 
+                </span>
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            <div class="naviconsone">
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    home
+                </span>
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    list_alt
+                </span>
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    fact_check
+                </span>
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div class="naviconstwo">
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    notifications
+                </span>
+                <span style="font-size: 30px" class="material-symbols-outlined">
+                    logout
+                </span>
+            </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+            <div class="insideprofile">
+                <div class="insideprofile1">
+                   <img class="profileimage" src="./IMG/profileimg1.jpg" alt="">
+                   <div>
+                        <h1>Hi Mike,</h1>
+                        <h4 style="color: gray;">Welcome Back</h4>
+                   </div>
+                </div>
+                <div class="insideprofile2">
+                    <div style="line-height: 10px;">
+                        <h2>Today</h2>
+                    </div>
+                    <div style="line-height: 5px;">
+                        <h1 style="font-size: 40px; font-weight: bold;">$19,892</h1>
+                        <h4 style="color: gray;">Account Balance</h4>
+                    </div>
+                    <div style="line-height: 5px;">
+                        <h2 style="font-weight: bold;">$4000</h2>
+                        <h4 style="color: gray;">Year-to-Date Contributions</h4>
+                    </div>
+                    <div style="line-height: 5px;">
+                        <h2 style="font-weight: bold;">$1,892</h2>
+                        <h4 style="color: gray;">Total Interest</h4>
+                    </div>
+                    <div>
+                        <select class="selectbtn">
+                            <option style="font-weight: bold;" value="">I want to</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="insideprofile3">
+                    <div style="line-height: 10px;">
+                        <h2>Recent Transactions</h2>
+                    </div>
+                    <div style="line-height: 5px; border-bottom: solid; padding-top: 5px; padding-bottom: 5px; border-color: gainsboro;">
+                        <h4 style="color: gray;">2020-08-07</h4>
+                        <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                    </div>
+                    <div style="line-height: 5px; border-bottom: solid; padding-top: 5px; padding-bottom: 5px; border-color: gainsboro;">
+                        <h4 style="color: gray;">2020-07-21</h4>
+                        <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                    </div>
+                    <div style="line-height: 5px; border-bottom: solid; padding-top: 5px; padding-bottom: 5px; border-color: gainsboro;">
+                        <h4 style="color: gray;">2020-07-16</h4>
+                        <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graph -->
+        <div class="thirdsec">
+            <div class="insidethirdsec">
+                <div style="line-height: 7px;">
+                    <div>
+                        <h4 style="color: blue;">Retirement Income</h4>
+                        <h2>Starting Year 2056</h2>
+                    </div>
+                </div>
+                <div id="thirdsecdata">
+                    <div style="display: flex; flex-direction: column;line-height: 2px;width: 30%;">
+                        <h1>$300,000</h1>
+                        <h4 style="color: gray; border-bottom: solid; padding-bottom: 20px; border-color: blue;">My Goal</h4>
+                    </div>
+                    <div style="display: flex; flex-direction: column;line-height: 2px;width: 30%;">
+                        <h1>$59</h1>
+                        <h4 style="color: gray; border-bottom: solid; padding-bottom: 20px; border-color: blue;">Goal</h4>
+                    </div>
+                    <div style="display: flex; flex-direction: column;line-height: 2px;width: 40%;">
+                        <h1>$300</h1>
+                        <h4 style="color: gray; border-bottom: solid; padding-bottom: 20px; border-color: blue;">My Goal</h4>
+                    </div>
+                </div>
+                <div>
+                    <h3>Contributions Overtime</h3>
+                    <div id="chart"></div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div class="thirdsecintro">
+                        <h3>How do I compare to my peers?</h3>
+                        <h4 style="color: gray;">These numbers represent current goal achievement</h4>
+                    </div>
+
+                    <div class="thirdsecprogress">
+                        <div id="thirdsecprogressdata">
+                            <div class="thirdsecprogressdata1">
+                                <div>
+                                    <h4 style="margin: 0%;">Age:</h3>
+                                </div>
+                                <div>
+                                    <select style="border: none;" name="" id="">
+                                        <option style="font-weight: bold;" value="">Under 30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="thirdsecprogressdata2">
+                                <div>
+                                    <h4 style="margin: 0%;">Salary:</h4>
+                                </div>
+                                <div>
+                                    <select style="border: none;" name="" id="">
+                                        <option style="font-weight: bold;" value="">K 20 - K 30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="thirdsecprogressdata3">
+                                <div>
+                                    <h4 style="margin: 0%;">Gender:</h4>
+                                </div>
+                                <div>
+                                    <select style="border: none;" name="" id="">
+                                        <option style="font-weight: bold;" value="">Male</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="thirdsecprogressradial">
+                            <div id="radialchart1" style="width: 30%;">
+                            </div>
+                            <div id="radialchart2" style="width: 30%;">
+                            </div>
+                            <div id="radialchart3" style="width: 30%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="fourthsec">
+            <div class="fourthsecdata1">
+                <div class="insidefourthdata1">
+                    <h2>Retirement strategy</h2>
+                    <div style="display: flex;flex-direction: column;gap: 10px;border-bottom: solid; padding-bottom: 30px; border-color: gainsboro;">
+                        <div style="line-height: 10px;">
+                            <h4>Employee Contribution</h4>
+                            <input style="width: 250px;border: none;" type="range">
+                            <label for="">12%</label>
+                        </div>
+                        <div style="line-height: 10px;">
+                            <h4>Retirement Age</h4>
+                            <input style="width: 250px;border: none;" type="range">
+                            <label for="">65</label>
+                        </div>
+                    </div>
+                    <div style="display: flex;flex-direction: column;margin-top: 20px;gap: 10px;">
+                        <div style="display: flex;justify-content: space-between;">
+                            <div>Employer Contribution</div>
+                            <div>8.4%</div>
+                        </div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <div>Interest Rate</div>
+                            <div>5%</div>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-top: 20px;">
+                        <button style="padding: 15px 120px;font-weight: bold;background-color: blue;color: white;border: none;font-size: 15px;border-radius: 10px;">Update</button>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-top: 20px;">
+                        <button style="padding: 15px 50px;font-weight: bold;background:none;color: blue;border: none;font-size: 15px;border-radius: 10px;">View Help Docs</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fourthsecdata2">
+                <p style="display: flex;flex-direction: column;margin: 0%">
+                    <h4 style="margin: 0%;">Are you considering a</h4>
+                    <h3 style="font-weight: 900; margin: 0%;">Housing Advance?</h3>
+                    <h5 style="margin: 0%;color: gray;">Limited time reduced interest</h4>
+                </p>
+                <button style="background: none;padding: 0%;border: none;font-size: 15px;color: blue;font-weight: bold;">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./index.js"></script>
+    <!-- <script src="../JS/index2two.js"></script> -->
+</body>
+</html>

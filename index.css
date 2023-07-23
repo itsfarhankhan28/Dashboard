@@ -1,0 +1,283 @@
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 5%;
+}
+.profile{
+    width: 25%;
+    height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.thirdsec{
+    width: 45%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+}
+.fourthsec{
+    width: 25%;
+    /* border: solid; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.naviconszero{
+    text-align: center;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.naviconsone{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    gap: 20px;
+}
+.naviconstwo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 20%;
+}
+.material-symbols-outlined{
+    font-size: 40px;
+    color: gray;
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 24px 23px 81px -32px rgba(82,82,82,1);
+    transition: 0.3s;
+}
+.insideprofile{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+.insideprofile1{
+    /* border: solid; */
+    display: flex;
+    gap: 15px;
+    line-height: 10px;
+}
+.insideprofile2{
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+}
+.insideprofile3{
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+.profileimage{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    box-shadow: -1px 1px 19px -2px rgba(184,173,184,1);
+}
+.selectbtn{
+    color: white;
+    background-color: blue;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+}
+.insidethirdsec{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* border: solid; */
+    width: 75%;
+    gap: 10px;
+}
+#thirdsecdata{
+    display: flex;
+    gap: 30px; 
+    justify-content: space-between;
+    margin-top: 10px
+}
+.thirdsecintro{
+    line-height: 5px;
+}
+.thirdsecprogress{
+    display: flex; 
+    gap: 50px; 
+    justify-content: space-between; 
+    height: 150px;
+}
+.thirdsecprogressdata{
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#thirdsecprogressradial{
+    display: flex; 
+    width: 70%; 
+    justify-content: center; 
+    align-items: center;
+}
+.thirdsecprogressdata1{
+    display: flex;
+    height: 30%; 
+    border-bottom: solid; 
+    border-color: gainsboro;
+}
+.thirdsecprogressdata2{
+    display: flex;
+    height: 30%; 
+    border-bottom: solid; 
+    border-color: gainsboro;
+}
+.thirdsecprogressdata3{
+    display: flex;
+    height: 30%; 
+    border-bottom: solid; 
+    border-color: gainsboro;
+}
+.fourthsecdata1{
+    width: max-content;
+    margin-top: 40px; 
+    height: 55%; 
+    padding: 10px 20px;
+    background-color: #FAFAFA;
+}
+.insidefourthdata1{
+    display: flex; 
+    flex-direction: column
+}
+.fourthsecdata2{
+    border-left: solid;
+    border-color: blue;
+    width: max-content;
+    padding: 10px 15px;
+}
+@media only screen and (max-width: 425px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        background-color: white;
+        padding: 15px 0px;
+        z-index: 50;
+    }
+    .profile{
+        z-index: 40;
+        height: 1000px;
+        width: auto;
+        background-color: white;
+    }
+    #logo_dev{
+        display: none;
+    }
+    .naviconszero{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: start; */
+    }
+    .naviconsone{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .naviconstwo{
+        display: flex;
+        flex-direction: row;
+        display: none;
+    }
+    .material-symbols-outlined:hover{
+        padding: 5px;
+    }
+    .thirdsec{
+        height: 1500px;
+        width: auto;
+    }
+    #thirdsecdata{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .thirdsecintro{
+        line-height: 20px;
+    }
+    .thirdsecprogress{
+        display: flex;
+        flex-direction: column;
+        /* border: solid; */
+    }
+    .thirdsecprogressdata{
+        width: auto;
+        gap: 20px;
+    }
+    #thirdsecprogressradial{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .thirdsecprogressdata1{
+        height: 50%;
+    }
+    .thirdsecprogressdata2{
+        height: 50%;
+    }
+    .thirdsecprogressdata3{
+        height: 50%;
+    }
+    .fourthsec{
+        width: auto;
+        height: 1500px;
+        justify-content: center;
+        gap: 70px;
+    }
+    .fourthsecdata1{
+        width: auto;
+        background-color: white;
+        padding-left: 45px;
+    }
+    .fourthsecdata2{
+        height: 100px;
+        margin-left: 45px;
+    }
+  }
